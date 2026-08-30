@@ -58,7 +58,7 @@ person — happens on a short-lived **feature branch**.
 
 3. First **summarise everything you changed into one concise summary**, then turn that summary
    into the commit message. Use Conventional Commits: a `<type>(<scope>): <summary>` subject
-   line in the imperative mood (~72 chars), plus a short body explaining the *why* when it
+   line in the imperative mood (~72 chars), plus a short body explaining the _why_ when it
    isn't obvious from the diff. Group related edits into one logical commit rather than one
    commit per file.
 
@@ -66,7 +66,7 @@ person — happens on a short-lived **feature branch**.
 
 4. Push the branch and open a PR into `main` — don't merge locally. Keep PRs focused; history
    on `main` is squash-merged (note the `(#NN)` suffixes in `git log`).
-5. Deploys are **release-gated**: merging to `main` does *not* ship anything. Acropolis Rising
+5. Deploys are **release-gated**: merging to `main` does _not_ ship anything. Acropolis Rising
    deploys only when a GitHub release is published — see
    [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml).
 
@@ -79,5 +79,5 @@ Only commit or push when the user asks, or when the task clearly calls for it. N
   manager: `pnpm nx build`, `pnpm nx typecheck`, `pnpm nx test`. See the nx guidelines above.
 - Before opening a PR, make sure `pnpm nx affected -t lint test typecheck build` is green.
 - **Typecheck cascade:** if you see a flood of `TS6305` / `TS7006` errors pointing at `*.spec`
-  files, treat them as noise — find and fix the *first real* type error in app source and the
+  files, treat them as noise — find and fix the _first real_ type error in app source and the
   rest disappear. Full explanation in [`README.md`](README.md).
