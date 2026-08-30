@@ -8,6 +8,9 @@
 		},
 		{
 			"path": "./apps/dj-website-2jays"
+		},
+		{
+			"path": "./apps/wedding-guest-site"
 		}
 	]
 }

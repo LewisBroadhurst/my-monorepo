@@ -1,0 +1,53 @@
+/* ============================================================================
+ * ANIA & JAN — GLOBAL STYLES (Tailwind v4)
+ * Styling lives as Tailwind utility classes in the components. This file only
+ * defines the design tokens (@theme) and base document styles.
+ * ==========================================================================*/
+
+@import 'tailwindcss';
+
+@theme {
+	/* Palette — warm ivory, deep forest green, muted gold */
+	--color-ivory: #faf7f2;
+	--color-parchment: #f3ede3;
+	--color-forest: #24382d;
+	--color-forest-soft: #3c5546;
+	--color-gold: #b08d4f;
+	--color-gold-soft: #cbb289;
+	--color-ink: #2c2a26;
+	--color-ink-soft: #6d675e;
+
+	/* Type */
+	--font-display: 'Cormorant Garamond', Georgia, serif;
+	--font-body: 'Jost', 'Helvetica Neue', Arial, sans-serif;
+}
+
+@layer base {
+	html {
+		scroll-behavior: smooth;
+	}
+
+	body {
+		background-color: var(--color-ivory);
+		color: var(--color-ink);
+		font-family: var(--font-body);
+		-webkit-font-smoothing: antialiased;
+	}
+}
+
+/* A thin ornamental rule used under section headings */
+.ornament {
+	position: relative;
+	display: inline-block;
+}
+
+.ornament::after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: -0.9rem;
+	transform: translateX(-50%);
+	width: 3.5rem;
+	height: 1px;
+	background: linear-gradient(to right, transparent, var(--color-gold), transparent);
+}
