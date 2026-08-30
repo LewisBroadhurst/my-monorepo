@@ -1,5 +1,6 @@
 import type { Copy } from '../content';
 import { PHOTOS } from '../photos';
+import { WatercolorWash } from './SectionHeading';
 
 export function Hero({ copy }: { copy: Copy }) {
 	return (
@@ -12,9 +13,10 @@ export function Hero({ copy }: { copy: Copy }) {
 			</div>
 
 			<div className="relative">
-				<p className="mb-6 text-xs font-medium uppercase tracking-[0.35em] text-gold">{copy.hero.eyebrow}</p>
+				<WatercolorWash />
+				<p className="relative mb-6 text-xs font-medium uppercase tracking-[0.35em] text-gold">{copy.hero.eyebrow}</p>
 
-				<h1 className="font-display text-6xl font-medium text-forest sm:text-8xl">{copy.hero.names}</h1>
+				<h1 className="relative font-display text-6xl font-medium text-forest sm:text-8xl">{copy.hero.names}</h1>
 
 				<div className="mt-8 flex items-center justify-center gap-5 text-ink-soft">
 					<span className="h-px w-10 bg-gold-soft" aria-hidden />
