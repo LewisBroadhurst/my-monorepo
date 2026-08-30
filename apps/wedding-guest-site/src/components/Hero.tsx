@@ -1,19 +1,31 @@
 import type { Copy } from '../content';
+import { PHOTOS } from '../photos';
+import { WatercolorWash } from './SectionHeading';
 
 export function Hero({ copy }: { copy: Copy }) {
 	return (
 		<section id="top" className="relative flex min-h-svh flex-col items-center justify-center px-5 text-center">
-			<p className="mb-6 text-xs font-medium uppercase tracking-[0.35em] text-gold">{copy.hero.eyebrow}</p>
-
-			<h1 className="font-display text-6xl font-medium text-forest sm:text-8xl">{copy.hero.names}</h1>
-
-			<div className="mt-8 flex items-center gap-5 text-ink-soft">
-				<span className="h-px w-10 bg-gold-soft" aria-hidden />
-				<p className="font-display text-2xl italic sm:text-3xl">{copy.hero.date}</p>
-				<span className="h-px w-10 bg-gold-soft" aria-hidden />
+			{/* Soft washed-out photo backdrop */}
+			<div aria-hidden className="absolute inset-0 overflow-hidden">
+				<img src={PHOTOS.hero} alt="" className="h-full w-full object-cover" />
+				<div className="absolute inset-0 bg-ivory/80" />
+				<div className="absolute inset-0 bg-gradient-to-b from-ivory via-transparent to-ivory" />
 			</div>
 
-			<p className="mt-3 text-sm uppercase tracking-[0.3em] text-ink-soft">{copy.hero.place}</p>
+			<div className="relative">
+				<WatercolorWash />
+				<p className="relative mb-6 text-xs font-medium uppercase tracking-[0.35em] text-gold">{copy.hero.eyebrow}</p>
+
+				<h1 className="relative font-display text-6xl font-medium text-forest sm:text-8xl">{copy.hero.names}</h1>
+
+				<div className="mt-8 flex items-center justify-center gap-5 text-ink-soft">
+					<span className="h-px w-10 bg-gold-soft" aria-hidden />
+					<p className="font-display text-2xl italic sm:text-3xl">{copy.hero.date}</p>
+					<span className="h-px w-10 bg-gold-soft" aria-hidden />
+				</div>
+
+				<p className="mt-3 text-sm uppercase tracking-[0.3em] text-ink-soft">{copy.hero.place}</p>
+			</div>
 
 			<a
 				href="#story"

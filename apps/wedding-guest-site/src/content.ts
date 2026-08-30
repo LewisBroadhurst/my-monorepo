@@ -42,6 +42,10 @@ export interface Copy {
 	story: {
 		heading: string;
 		body: string[];
+		photoAlt: string;
+	};
+	gallery: {
+		alts: string[];
 	};
 	schedule: {
 		heading: string;
@@ -96,6 +100,10 @@ export const COPY: Record<Lang, Copy> = {
 		story: {
 			heading: 'Our Story',
 			body: [LOREM_MEDIUM, LOREM_SHORT],
+			photoAlt: 'Hands of the couple with wedding rings',
+		},
+		gallery: {
+			alts: ['Wedding bouquet', 'Flower-lined ceremony aisle', 'Newlyweds showered in confetti'],
 		},
 		schedule: {
 			heading: 'The Day',
@@ -165,6 +173,10 @@ export const COPY: Record<Lang, Copy> = {
 		story: {
 			heading: 'Nasza historia',
 			body: [LOREM_MEDIUM, LOREM_SHORT],
+			photoAlt: 'Dłonie pary młodej z obrączkami',
+		},
+		gallery: {
+			alts: ['Bukiet ślubny', 'Aleja ceremonii przystrojona kwiatami', 'Para młoda obsypana konfetti'],
 		},
 		schedule: {
 			heading: 'Plan dnia',

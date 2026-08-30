@@ -6,5 +6,6 @@ export { Venue } from './Venue';
 export { Travel } from './Travel';
 export { Rsvp } from './Rsvp';
 export { Faq } from './Faq';
+export { Gallery } from './Gallery';
 export { Footer } from './Footer';
 export { SectionHeading } from './SectionHeading';
