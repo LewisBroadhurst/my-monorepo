@@ -4,9 +4,6 @@
 	"files": [],
 	"references": [
 		{
-			"path": "./apps/acropolis-rising-react"
-		},
-		{
 			"path": "./apps/dj-website-2jays"
 		},
 		{

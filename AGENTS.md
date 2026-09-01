@@ -66,9 +66,10 @@ person — happens on a short-lived **feature branch**.
 
 4. Push the branch and open a PR into `main` — don't merge locally. Keep PRs focused; history
    on `main` is squash-merged (note the `(#NN)` suffixes in `git log`).
-5. Deploys are **release-gated**: merging to `main` does _not_ ship anything. Acropolis Rising
-   deploys only when a GitHub release is published — see
-   [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml).
+5. Nothing here deploys. Acropolis Rising used to ship from this repo behind a release-gated
+   Pages workflow; it now lives in its own repository,
+   [LewisBroadhurst/acropolis-rising](https://github.com/LewisBroadhurst/acropolis-rising), and
+   deploys from there. The apps that remain are run locally.
 
 Only commit or push when the user asks, or when the task clearly calls for it. Never force-push
 `main` or delete branches you didn't create.
