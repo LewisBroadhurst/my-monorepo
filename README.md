@@ -4,10 +4,24 @@ This repo is basically me just playing with claude code and seeing how far I can
 
 # Projects
 
-## Acropolis Rising (HTML and React versions)
+## Acropolis Rising — moved out
 
 Acropolis Rising is a rerun of a game I played heavily growing up called Zeus: Master of Olympus.
-The goal is to recreate it and publish it so it is playable in a web browser, with very little to no code committed by myself.
+The goal was to recreate it and publish it so it is playable in a web browser, with very little
+to no code committed by myself.
+
+It outgrew this sandbox and now lives in its own repository, with its history intact:
+
+- Source: <https://github.com/LewisBroadhurst/acropolis-rising>
+- Play it: <https://lewisbroadhurst.github.io/acropolis-rising/>
+
+## DJ website (2jays)
+
+An embed-ready site for a DJ act. `apps/dj-website-2jays`.
+
+## Wedding guest site
+
+A bilingual wedding information site for guests. `apps/wedding-guest-site`.
 
 # Development notes
 
