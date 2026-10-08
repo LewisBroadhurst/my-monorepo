@@ -7,13 +7,6 @@
 			"runtimeArgs": ["nx", "dev", "@org/dj-website-2jays"],
 			"port": 4200,
 			"autoPort": true
-		},
-		{
-			"name": "wedding-guest-site",
-			"runtimeExecutable": "pnpm",
-			"runtimeArgs": ["nx", "dev", "@org/wedding-guest-site"],
-			"port": 4200,
-			"autoPort": true
 		}
 	]
 }
