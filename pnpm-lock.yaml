@@ -129,8 +129,6 @@ importers:
 
   apps/dj-website-2jays: {}
 
-  apps/wedding-guest-site: {}
-
 packages:
 
   '@acemir/cssom@0.9.31':

@@ -19,9 +19,12 @@ It outgrew this sandbox and now lives in its own repository, with its history in
 
 An embed-ready site for a DJ act. `apps/dj-website-2jays`.
 
-## Wedding guest site
+## Wedding guest site — moved out
 
-A bilingual wedding information site for guests. `apps/wedding-guest-site`.
+A bilingual (English/Polish) wedding information site for guests. It started here as
+`apps/wedding-guest-site` and now lives in its own private repository, with its history intact:
+
+- Source: <https://github.com/LewisBroadhurst/the-broadhursts> (private)
 
 # Development notes
 
